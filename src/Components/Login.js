@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     return (
@@ -19,10 +20,12 @@ const Login = () => {
             <img src="/images/login-hero.svg" alt="" />
           </Hero>
           <Form>
+            <Link to="/home" >
             <Google>
               <img src="/images/google.svg" alt="" />
               Sign in with Google
             </Google>
+            </Link>
           </Form>
         </Section>
       </Container>
